@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile - Tutoring Website{% endblock %}
+
+{% block content %}
+<section>
+    <h2>Welcome, {{ name }}</h2>
+    <p>This is your profile page.</p>
+    <a href="{{ url_for('logout') }}"><button>Logout</button></a>
+</section>
+{% endblock %}
